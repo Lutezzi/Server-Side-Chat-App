@@ -1,0 +1,17 @@
+<!-- public/chat.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Chat</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h2>Sohbet</h2>
+  <ul id="messages"></ul>
+  <input id="messageInput" autocomplete="off" placeholder="Mesaj yaz..." />
+  <button onclick="sendMessage()">Gönder</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

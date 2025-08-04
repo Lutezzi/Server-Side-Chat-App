@@ -1,0 +1,25 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sohbete Giriş</title>
+</head>
+<body>
+  <h2>Kullanıcı Adınızı Girin</h2>
+  <input type="text" id="username" placeholder="Adınız">
+  <button onclick="joinChat()">Sohbete Katıl</button>
+
+  <script>
+    function joinChat() {
+      const username = document.getElementById('username').value.trim();
+      if (username) {
+        localStorage.setItem('username', username);
+        window.location.href = 'chat.html';
+      } else {
+        alert("Lütfen bir ad girin");
+      }
+    }
+  </script>
+</body>
+</html>
